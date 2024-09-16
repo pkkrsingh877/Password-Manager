@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "../components/navbar";
 
 export const metadata = {
   title: "Password Manager",
@@ -8,10 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="container mx-auto">
+      <body className="w-screen h-screen overflow-x-hidden">
 
         <header className="bg-blue-500 text-white p-4 text-center">
-          <h1>Password Manager</h1>
+          <Navbar />
         </header>
 
         <main className="bg-gray-100 p-4 mx-auto py-20 w-4/5">

@@ -5,7 +5,8 @@ export default function HomePage() {
     <div>
       <h2>Dashboard</h2>
       <hr />
-      <Link href="/addPassword">Add New Website and Password</Link>
+      <Link href="/password/add">Add New Website and Password</Link>
+      <Link href="/auth/login">Login</Link>
     </div>
   );
 }

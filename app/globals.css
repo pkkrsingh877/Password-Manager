@@ -2,9 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  border: 0;
+/* Apply a global box-sizing to include padding and borders in the element's total width and height */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding from all elements */
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol,
+figure, blockquote,
+dl, dd {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+/* Set a default font size and family */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Set up a container with max width and centering */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Optional: Adjust container padding */
+}
+
+/* Basic link styles */
+a {
+  color: #1d4ed8; /* Tailwind CSS blue-700 */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility classes for margins and padding */
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+/* Add global styles for headers and footers */
+header, footer {
+  background-color: #1d4ed8; /* Tailwind CSS blue-700 */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
 }
